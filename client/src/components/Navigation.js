@@ -8,7 +8,7 @@ import './components.scss';
 
 
 const Navigation = () => {
-  const [loggedIn, setLoggedIn] = useState('');
+  const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(()=>{
     if(localStorage.getItem('token')) {
