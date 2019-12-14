@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from '../utils/axiosWithAuth';
 
+import { Container } from 'reactstrap';
+
 import Bubbles from "./Bubbles";
 import ColorList from "./ColorList";
+import Navigation from './Navigation';
 
 const BubblePage = () => {
   const [colorList, setColorList] = useState([]);
@@ -19,6 +22,7 @@ const BubblePage = () => {
 
   return (
     <>
+      <Navigation/>
       <ColorList colors={colorList} updateColors={setColorList} />
       <Bubbles colors={colorList} />
     </>

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import axiosWithAuth from '../utils/axiosWithAuth';
 
-import { Container, Card, CardTitle, Button, Form, Input } from 'reactstrap'
+import { Container, Card, Button, Form, Input } from 'reactstrap'
+import Navigation from './Navigation';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './components.scss';
@@ -20,7 +21,7 @@ const Login = (props) => {
   const handleLogin =(e)=> {
     e.preventDefault();
     axiosWithAuth()
-      .post('http://localhost:5000/api/login', login)
+      .post(`http://localhost:5000/api/login`, login)
       .then (res => {
         console.log('Login.js handleLogin: ', res);
         localStorage.setItem('token', res.data.payload);
@@ -39,10 +40,10 @@ const Login = (props) => {
   // when you have handled the token, navigate to the BubblePage route
 
   return (
-    <Container> 
+    <Container className='login-container'> 
+      <h1>Welcome to the Bubble App!</h1>
+      <Navigation />
       <Card className="login-card">
-      <CardTitle>Welcome to the Bubble App!</CardTitle>
-
         <Form className='login-form' onSubmit={handleLogin}>
           <Input
             type='text'

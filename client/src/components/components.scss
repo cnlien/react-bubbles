@@ -1,15 +1,23 @@
-.login-card {
-  margin: 20px auto;
 
-  .login-form {
-    margin-top: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+.login-container {
+  padding-top: 60px;
 
-    .login-input {
-      margin-bottom: 5px;
-      width: 80%;
+  .login-card {
+    margin: 20px auto;
+    padding: 60px;
+  
+    .login-form {
+      margin-top: 0;
+      display: flex;
+      justify-content: flex-start;
+  
+      .login-input {
+        margin-bottom: 5px;
+      }
     }
   }
+}
+
+.nav-item {
+  margin-right: 10px;
 }
