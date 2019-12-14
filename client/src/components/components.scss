@@ -1,0 +1,15 @@
+.login-card {
+  margin: 20px auto;
+
+  .login-form {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .login-input {
+      margin-bottom: 5px;
+      width: 80%;
+    }
+  }
+}
