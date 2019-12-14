@@ -21,3 +21,15 @@
 .nav-item {
   margin-right: 10px;
 }
+
+.sprint-answers {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: left;
+
+  h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}

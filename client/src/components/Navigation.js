@@ -31,6 +31,10 @@ const Navigation = () => {
           <NavItem>
             {loggedIn ? <Link to='/bubbles-page'>Bubbles</Link> : <Link to="/"></Link>}
           </NavItem>
+
+          <NavItem>
+            {loggedIn ? <Link to='/sprint-answers'>Sprint Answers</Link> : <Link to="/"></Link>}
+          </NavItem>
         </Nav>
     </Navbar>
   )
